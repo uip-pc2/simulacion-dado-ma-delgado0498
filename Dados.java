@@ -1,25 +1,25 @@
-package primer_programa;
+package quiz1;
 
 public class Dados {
-    private Integer tirar;
+    private Integer lanzar;
 
 
     public Dados() {
 
-        this.tirar = 1 + (int)(Math.random() * ((6 - 1) + 1));
+        this.lanzar = 1 + (int)(Math.random() * ((6 - 1) + 1));
     }
 
 
     public Integer getLanzar() {
-        return tirar;
+        return lanzar;
     }
 
     public int lanzamiento() {
-        System.out.println("\n Simulacion de Lanzamiento De Dados");
-        System.out.println("\n Tirando Dados.....");
+        System.out.println("\nSimulacion De Dados");
+        System.out.println("\nLanzando Dados................");
         double probabilidad_lanzar = Math.random();
-        System.out.println("El numero que te ha salido es: " +tirar);
-        System.out.println("\nSumando la lista de Resultados. ");
+        System.out.println("Te ha salido el numero: " +lanzar);
+        System.out.println("\nIncluyendo a la lista de resultados... ");
 
         return 0;
     }

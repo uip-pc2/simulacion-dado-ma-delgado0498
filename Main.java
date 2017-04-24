@@ -1,4 +1,4 @@
-package primer_programa;
+package quiz1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -13,16 +13,16 @@ public class Main {
         while(true) {
             int opcion = 0;
 
-            System.out.println("\n Simulacion De Dados");
-            System.out.println("1. Lanzamiento");
-            System.out.println("2. Tus Resultados");
-            System.out.println("3. Salida");
+            System.out.println("\nSimulacion De Dados");
+            System.out.println("1. Lanzar");
+            System.out.println("2. Ver tus resultados");
+            System.out.println("3. Salir");
 
             try {
                 System.out.print("OPCION: ");
                 opcion = Integer.parseInt(br.readLine());
             } catch (Exception e) {
-                System.err.println("ERROR: Opción es inválida.");
+                System.err.println("ERROR: Opción inválida.");
             }
 
             switch (opcion) {
@@ -35,8 +35,8 @@ public class Main {
                     break;
                 case 2:
                     if (lista_dados.size() == 0)
-                        System.out.println("Ud no realizo lanzamiento ");
-                    else System.out.println("\n Mostrando Resultados: "); {for (Dados dd : lista_dados) {
+                        System.out.println("No haz hecho ningún lanzamiento ");
+                    else System.out.println("\nTus resultados son: "); {for (Dados dd : lista_dados) {
 
                     System.out.println(Math.round(dd.getLanzar()));
                 }
@@ -46,7 +46,7 @@ public class Main {
                     System.exit(0);
                     break;
                 default:
-                    System.out.println("ERROR: Opción es inválida");
+                    System.out.println("ERROR: Opción inválida");
             }
         }
     }
